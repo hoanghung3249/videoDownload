@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		4521BCB7204CE53C003611DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521BCB6204CE53C003611DF /* AppDelegate.swift */; };
-		4521BCB9204CE53C003611DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521BCB8204CE53C003611DF /* ViewController.swift */; };
 		4521BCBC204CE53C003611DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4521BCBA204CE53C003611DF /* Main.storyboard */; };
 		4521BCBE204CE53C003611DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4521BCBD204CE53C003611DF /* Assets.xcassets */; };
 		4521BCC1204CE53C003611DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4521BCBF204CE53C003611DF /* LaunchScreen.storyboard */; };
+		4521BCCB204D0155003611DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521BCCA204D0155003611DF /* MainViewController.swift */; };
+		4521BCCE204D2A45003611DF /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521BCCD204D2A45003611DF /* DownloadViewController.swift */; };
+		4521BCD2204D382F003611DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521BCD1204D382F003611DF /* Extensions.swift */; };
 		BD9B981D65AC1A6E3EA397B5 /* Pods_VideoDownload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EEACB977A1D6E7B9ADF192 /* Pods_VideoDownload.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4521BCB3204CE53C003611DF /* VideoDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4521BCB6204CE53C003611DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4521BCB8204CE53C003611DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4521BCBB204CE53C003611DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4521BCBD204CE53C003611DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4521BCC0204CE53C003611DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4521BCC2204CE53C003611DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4521BCCA204D0155003611DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4521BCCD204D2A45003611DF /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		4521BCD1204D382F003611DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7F9ACAA7C5DFA0EF0841698B /* Pods-VideoDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDownload.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoDownload/Pods-VideoDownload.release.xcconfig"; sourceTree = "<group>"; };
 		C5E18530AB2CCB73649C6D9E /* Pods-VideoDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDownload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoDownload/Pods-VideoDownload.debug.xcconfig"; sourceTree = "<group>"; };
 		D1EEACB977A1D6E7B9ADF192 /* Pods_VideoDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,13 +66,55 @@
 			isa = PBXGroup;
 			children = (
 				4521BCB6204CE53C003611DF /* AppDelegate.swift */,
-				4521BCB8204CE53C003611DF /* ViewController.swift */,
+				4521BCC8204D0134003611DF /* ViewControllers */,
+				4521BCCF204D37FE003611DF /* Helper */,
 				4521BCBA204CE53C003611DF /* Main.storyboard */,
 				4521BCBD204CE53C003611DF /* Assets.xcassets */,
 				4521BCBF204CE53C003611DF /* LaunchScreen.storyboard */,
 				4521BCC2204CE53C003611DF /* Info.plist */,
 			);
 			path = VideoDownload;
+			sourceTree = "<group>";
+		};
+		4521BCC8204D0134003611DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4521BCCC204D2A39003611DF /* DownloadVC */,
+				4521BCC9204D0149003611DF /* MainVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4521BCC9204D0149003611DF /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				4521BCCA204D0155003611DF /* MainViewController.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		4521BCCC204D2A39003611DF /* DownloadVC */ = {
+			isa = PBXGroup;
+			children = (
+				4521BCCD204D2A45003611DF /* DownloadViewController.swift */,
+			);
+			path = DownloadVC;
+			sourceTree = "<group>";
+		};
+		4521BCCF204D37FE003611DF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4521BCD0204D3823003611DF /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4521BCD0204D3823003611DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4521BCD1204D382F003611DF /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		83FBDA018AE710043B2ED3B0 /* Pods */ = {
@@ -169,12 +215,14 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4521BCB9204CE53C003611DF /* ViewController.swift in Sources */,
+				4521BCCB204D0155003611DF /* MainViewController.swift in Sources */,
+				4521BCCE204D2A45003611DF /* DownloadViewController.swift in Sources */,
 				4521BCB7204CE53C003611DF /* AppDelegate.swift in Sources */,
+				4521BCD2204D382F003611DF /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,5 +4,6 @@ use_frameworks!
 target 'VideoDownload' do
   pod 'IQKeyboardManager'
   pod 'RealmSwift'
+  pod 'SnapKit', '~> 4.0.0'
 
 end

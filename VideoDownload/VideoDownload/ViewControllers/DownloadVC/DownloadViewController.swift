@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DownloadViewController.swift
 //  VideoDownload
 //
 //  Created by HOANGHUNG on 3/5/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DownloadViewController: UIViewController {
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
     }
 
 }
-
